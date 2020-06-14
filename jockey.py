@@ -1,0 +1,2 @@
+import funcoes_pyhton
+funcoes_pyhton.armazenar_client
