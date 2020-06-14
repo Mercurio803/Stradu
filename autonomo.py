@@ -68,17 +68,18 @@ def SegundaTab():
     arquivo.close()
     propostas,des,cp,cd,valor = funcoes_pyhton.minhas_propostas(cpf2)
     i = 0
-    for n in propostas:
-        y1 = 40+120*(i+1)
-        txt_usuario = tkinter.Label(f2,text = "Oferta de numero:" + str(n))
-        txt_usuario.place(x = 50, y = y1)
-        txt_usuario = tkinter.Label(f2,text = "VALOR" + valor[i])
-        txt_usuario.place(x = 50, y = y1+20)
-        txt_usuario = tkinter.Label(f2,text = "ROTA: de "+cp[i]+" para "+cd[i])
-        txt_usuario.place(x = 50, y = y1+40)
-        txt_descricao = tkinter.Label(f2,text = "DESCRICAO:" + des[i])
-        txt_descricao.place(x = 50, y = y1+60)
-        i = i+1
+    if(propostas != 0):
+        for n in propostas:
+            y1 = 40+120*(i+1)
+            txt_usuario = tkinter.Label(f2,text = "Oferta de numero:" + str(n))
+            txt_usuario.place(x = 50, y = y1)
+            txt_usuario = tkinter.Label(f2,text = "VALOR" + valor[i])
+            txt_usuario.place(x = 50, y = y1+20)
+            txt_usuario = tkinter.Label(f2,text = "ROTA: de "+cp[i]+" para "+cd[i])
+            txt_usuario.place(x = 50, y = y1+40)
+            txt_descricao = tkinter.Label(f2,text = "DESCRICAO:" + des[i])
+            txt_descricao.place(x = 50, y = y1+60)
+            i = i+1
 
 
 def TerceiraTab():
