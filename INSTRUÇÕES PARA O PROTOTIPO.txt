@@ -1,0 +1,12 @@
+PROTÓTIPO DO FUNCIONAMENTO DO STRADU
+somente para auxiliar o entendimento da ideia
+
+1. Realize o cadastro como autonomo (cpf somente numeros) e em seguida publique a proposta
+2. Feche o programa
+3. Realize o cadastro como amigo
+4. Clique em ver propostas e depois em conversar
+5. Mande uma mensagem para realizar o contato
+6. (caso deseje ver, pode retorna a conta anterior e ir na aba usuarios)
+
+Esse eh o funcionamento
+Os dados são salvos em uma conta do firebase!
