@@ -190,6 +190,27 @@ def monstrar_contatos_em_conversa(cpf):
             result.append(icpf)
     return result
     
-
+def minhas_propostas(cpf):
+    all_cpfs_propostas = db.child("propostas").get(user['idToken'])
+    result = []
+    results_descricao = []
+    results_cidade_partida = []
+    results_cidade_destino = []
+    results_valor_proposto = []
+    i=0
+    for cpfam in all_cpfs_propostas.each():
+        i = i+1
+        comp1  = str(db.child("propostas/"+str(i)+"/cpf_autor").get(user['idToken']).val())
+        comp2  = str(db.child("propostas/"+str(i)+"/descricao").get(user['idToken']).val())
+        comp3  = str(db.child("propostas/"+str(i)+"/cidade_partida").get(user['idToken']).val())
+        comp4  = str(db.child("propostas/"+str(i)+"/cidade_destino").get(user['idToken']).val())
+        comp5  = str(db.child("propostas/"+str(i)+"/valor_proposto").get(user['idToken']).val())
+        if(comp1 == cpf):
+            result.append(i)
+            results_descricao.append(comp2)
+            results_cidade_partida.append(comp3)
+            results_cidade_destino.append(comp4)
+            results_valor_proposto.append(comp5)
+    return (result,results_descricao,results_cidade_partida,results_cidade_destino,results_valor_proposto)
     
 
