@@ -1,6 +1,7 @@
 PROTÓTIPO DO FUNCIONAMENTO DO STRADU
 somente para auxiliar o entendimento da ideia
 
+EXECUTE O ARQUIVO cadastro.py
 1. Realize o cadastro como autonomo (cpf somente numeros) e em seguida publique a proposta
 2. Feche o programa
 3. Realize o cadastro como amigo
@@ -9,4 +10,8 @@ somente para auxiliar o entendimento da ideia
 6. (caso deseje ver, pode retorna a conta anterior e ir na aba usuarios)
 
 Esse eh o funcionamento
+
 Os dados são salvos em uma conta do firebase!
+
+Os arquivos estados-cidades.json e estados-cidades.json2 nao estao sendo ultilizados,
+ 	mas seriam para facilitar os campos cidade e estado
